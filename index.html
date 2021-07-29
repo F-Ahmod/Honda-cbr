@@ -26,10 +26,6 @@
       filter: grayscale(100%);
     }
 
-    .img3 img {
-      filter: grayscale(100%);
-    }
-
     .w img {
       width: 288px;
     }
@@ -47,8 +43,16 @@
     }
 
     .newpa {
-      padding: 100px;
+      width: 1000px;
+      padding-left: 50px;
+      padding-right: 100px;
+      padding-top: 70px;
+      padding-bottom: 350px;
     }
+    .bg-purchase{
+      background-color: #E76F51;
+
+    } 
 
     }
   </style>
@@ -59,48 +63,11 @@
   <header>
     <!-- header bike desin  -->
     <section>
-      <nav class="fluid bgnav navbar navbar-expand-lg navbar-white d-flex justify-content-end">
-        <div class="">
-          <a class="navbar-brand" href="#">Honda CBR</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li> -->
-              <!-- <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li> -->
-            </ul>
-            <!-- <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form> -->
-          </div>
-        </div>
+      <nav>
+        <img class="img-fluid w-100" src="images/bike hed.png" alt="">
       </nav>
     </section>
-    <section>
-
-    </section>
+    
 
 
     <section class="py-5 px-5 mb-5 hondabg d-flex justify-content-evenly align-items-center">
@@ -110,13 +77,36 @@
         <div class="col-lg-8 col-md-6">
           <p>Computer-controlled digital transistorized with electronic advanc</p>
           <p class="fs-1 fw-bold">Honda CBR 300</p>
-          <p>Amet minim mollit non deserunt ullamco est sit aliqua
-            dolor do amet sint. Velit officia consequat duis enim velit
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua </BR>
+            dolor do amet sint. Velit officia consequat duis <br> enim velit
             mollit. Exercitation veniam consequat sunt nostrud amet</p>
 
-          <button class="btn btn-danger">Buy Now</button>
+           <!-- Button trigger modal -->
+         <button type="button" class="btn bg-purchase" data-bs-toggle="modal" data-bs-target="#exampleModal">Purchase</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+       <div class="modal-content">
+       <div class="modal-header">
+        <h5 class="modal-title bg-danger" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-danger">
+        ...welcome to our modal!!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ok</button>
+        <button type="button" class="btn btn-primary">Nothing</button>
+      </div>
+    </div>
+  </div>
+</div>
+            
+
+          
         </div>
-        <div class="col-lg-4 colmd--6">
+        <div class="col-lg-4 col-md--6">
           <img class="img-fluid" src="images/header-bike.png" alt="">
         </div>
       </div>
@@ -126,20 +116,26 @@
 
   <main>
     <!-- bike with grayscle -->
-    <section>
-      <p class="fs-1 fw-bold d-flex justify-content-center">Fetured Bikes 2021</p>
-      <h5 class=" d-flex justify-content-center h5-text-color">Best bike collection</h5>
-      <div class="card-group mt-5 b d-flex justify-content-between">
-        <div class="card img1 border-0 w ps-5 ">
-          <img src="images/feature-bike.jpg" class="card-img-top" alt=".">
-        </div>
+    
+      
 
+     
+    <section>
+      <p class="display-5 fw-bold d-flex justify-content-center">Fetured Bikes 2021</p>
+      <h5 class=" d-flex justify-content-center h5-text-color">Best bike collection</h5>
+
+      <div class="card-group mb-5">
+        <div class="card img1 border-0 w ps-5">
+          <img src="images/feature-bike.jpg" class="card-img-top " alt="...">
+          
+        </div>
         <div class="card border-0 w ps-5">
           <img src="images/feature-bike.jpg" class="card-img-top" alt="...">
+          
         </div>
-
-        <div class="card img3 border-0 w ps-5">
-          <img src="images/feature-bike.jpg" class="card-img-top" alt=".">
+        <div class="card img1 border-0 w ps-5">
+          <img src="images/feature-bike.jpg" class="card-img-top" alt="...">
+          
         </div>
       </div>
     </section>
@@ -156,9 +152,9 @@
 
             <div class="card-body ">
 
-              <p class="card-text d-flex justify-content-center">Slate helps you see how <br> many more days you need
-                <br> to work to reach your financial <br> goal for the month and year.</p>
-              <p class="fw-bold text-info d-flex justify-content-center">Regina Mile</p>
+              <p class="card-text d-flex justify-content-center">"The best form of customer service < is self-service. <br> Constantly empower customers to get their <br>
+                 own answers themselves." </p>
+              <p class="fw-bold text-info d-flex justify-content-center">caloponiya</p>
               <div class="bgstart d-flex justify-content-center"><i class="fas fa-star"></i><i
                   class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                   class="far fa-star"></i></div>
@@ -169,32 +165,32 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="images/user-2.png" class="w-25 py-5 mx-auto " alt="...">
+            <img src="images/use-2r.png" class="w-25 py-5 mx-auto " alt="...">
             <div class="card-body ">
 
-              <p class="card-text d-flex justify-content-center">Slate helps you see how <br> many more days you need
-                <br> to work to reach your financial <br> goal for the month and year.</p>
-              <p class="fw-bold text-info d-flex justify-content-center">Regina Mile</p>
+              <p class="card-text d-flex justify-content-center">"Let's take most of the money we would've <br> spent on paid advertising and paid marketing
+                <br>and instead of spending it on that.</p>
+              <p class="fw-bold text-info d-flex justify-content-center">wsingtone wc</p>
               <div class="bgstart d-flex justify-content-center"><i class="fas fa-star"></i><i
                   class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                   class="far fa-star"></i></div>
-              <p class=" fw-bold d-flex justify-content-center">jon smith</p>
+              <p class=" fw-bold d-flex justify-content-center">Alina</p>
 
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card">
-            <img src="images/user-2.png" class="w-25 py-5 mx-auto " alt="...">
+            <img src="images/new user(2).jpg" class="w-25 py-5 mx-auto " alt="...">
             <div class="card-body ">
 
-              <p class="card-text d-flex justify-content-center">Slate helps you see how <br> many more days you need
-                <br> to work to reach your financial <br> goal for the month and year.</p>
-              <p class="fw-bold text-info d-flex justify-content-center">Regina Mile</p>
+              <p class="card-text d-flex justify-content-center">"It comes down to how your customer experiences <br> the brand – and how that brand makes <br> a person feel." 
+                </p>
+              <p class="fw-bold text-info d-flex justify-content-center">Bahamus</p>
               <div class="bgstart d-flex justify-content-center"><i class="fas fa-star"></i><i
                   class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                   class="far fa-star"></i></div>
-              <p class=" fw-bold d-flex justify-content-center">jon smith</p>
+              <p class=" fw-bold d-flex justify-content-center">Angle</p>
 
             </div>
           </div>
@@ -218,17 +214,15 @@
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                   aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
+                   Suzuki 
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                  This is the first item's accordion body. It is shown by default, until the collapse
                   plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  
                 </div>
               </div>
             </div>
@@ -236,17 +230,15 @@
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
+                 Honda
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                  This is the second item's accordion body. It is hidden by default, until the collapse
                   plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  
                 </div>
               </div>
             </div>
@@ -254,17 +246,15 @@
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
+                  Hero
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                 This is the third item's accordion body. It is hidden by default, until the collapse
                   plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  
                 </div>
               </div>
             </div>
@@ -275,12 +265,20 @@
 
       </div>
     </section>
-
-
+    <!-- offer items  -->
+    <section>
+      <img class="img-fluid w-100" src="images/bike offer.jpg" alt="">
+    </section>
 
   </main>
-  <footer>
-    <h2>hgvxschfdhjfdoj</h2>
+  <footer class="hondabg d-flex justify-content-center align-items-center">
+    <div class="text-white"> 
+      
+      <p>get more more update tuch with us</p>
+      <input type="text" placeholder="Your email"> <button class="btn btn-warning">Submit</button><br>
+    <a href="">Home</a> <a href="">address</a> <a href="">Contact with us</a> 
+    <small>@copiright 1995 -2021 reserved</small>  
+    </div>
 
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
